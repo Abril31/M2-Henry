@@ -1,3 +1,5 @@
+import { INCREMENT, DECREMENT } from "../../../01 - Exercises/src/action-types";
+
 export const INCREMENT = 'INCREMENT';
 export const DECREMENT = 'DECREMENT';
 
@@ -7,9 +9,13 @@ export const DECREMENT = 'DECREMENT';
 // Eso se lo deja al reducer(s).
 
 export const increment = () => {
-  // Completa la funcion
+  return {
+    type: INCREMENT
+  }
 };
 
 export const decrement = () => {
-  // Completa la funcion
+  return {
+    type: DECREMENT
+  }
 };
